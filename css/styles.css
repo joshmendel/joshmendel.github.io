@@ -1,0 +1,73 @@
+/* universal selector*/
+* {
+  color:#501A00; /* color means font color */
+  font-family: 'Lato', sans-serif;
+}
+
+body{
+  background-color: #501A00;
+  margin:0px;
+}
+
+.navbar{
+  height:70px;
+  width:100%;
+  background-color: #816D65;
+  z-index: 1000;
+  position:fixed;
+  top: 0px;
+  left:0px;
+  text-align:center;
+}
+
+.navbar img{
+  width: 70px;
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  border-radius: 25px;
+}
+
+.navbar div{
+  box-sizing: border-box;
+  /*background-color:black;*/
+  color: dodgerblue    !important;
+  display: inline-block;
+  padding-top:25px;
+  height:70px;
+  margin-left: -2px;
+  margin-right: -2px;
+  width: 130px;
+  transition: background-color .4s, font-size .4s, box-shadow .4s;
+}
+
+/* called a pseudo-selector*/
+.navbar div:hover{
+    background-color: black;
+    font-size: 15px;
+    box-shadow: inset 2px 2px 15px dodgerblue;
+
+}
+.content{
+  position:relative;
+  top: 100px;
+  background-color: #F1AC8B;
+  max-width: 600px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  padding: 25px;
+}
+
+.toc{
+  border:2px solid #7A300D;
+  width:175px;
+  height:200px;
+  margin:0 auto;
+}
+
+/* descendant class*/
+.toc h3{
+  text-align: center;
+}
